@@ -12,7 +12,7 @@
 struct Record { std::string name,id,kind,time; };
 std::vector<Record> records; std::mutex mx;
 bool faceOpen=false, codeActive=false; std::string currentCode;
-const std::string adminPassword = []{const char* p=std::getenv("ADMIN_PASSWORD");return p?std::string(p):"ChangeThisAdminPassword";}();
+const std::string adminPassword = []{const char* p=std::getenv("ADMIN_PASSWORD");return p?std::string(p):"megamindprince";}();
 const double centerLat=std::getenv("CENTER_LAT")?std::atof(std::getenv("CENTER_LAT")):5.6037;
 const double centerLon=std::getenv("CENTER_LON")?std::atof(std::getenv("CENTER_LON")):-0.1870;
 const double radius=std::getenv("RADIUS_METERS")?std::atof(std::getenv("RADIUS_METERS")):100.0;
